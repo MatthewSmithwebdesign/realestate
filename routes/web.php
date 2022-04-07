@@ -14,8 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 //home
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages/home');
 });
+
 // show all listings
 Route::get('/{property_type}/{listing_type}', function () {
     return view('welcome');

@@ -1,4 +1,4 @@
-const { sass } = require('laravel-mix');
+const { sass, browserSync } = require('laravel-mix');
 const mix = require('laravel-mix');
 
 /*
@@ -13,5 +13,7 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-.sass('resources/css/styles.scss', 'public/css')
+browserSync('localhost:8888')
+.sass('resources/css/styles.scss', 'public/css');
+
 
